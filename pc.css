@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(to left, crimson,green);
+    height: 100%;
+    width:100%;
+    z-index: 1;
+}
+
+
+
+.container{
+    width: 100%;
+    background-color: lawngreen;
+    height: 40px;
+    border: 2px solid blue;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+.first{
+
+    height: 400px;
+    width: 350px;
+    background:linear-gradient(to right ,red,orange);
+    margin-top:30px;
+    margin-left: 30px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    align-content: center;
+    border: 2px solid blue;
+    margin-top:50px;
+    
+      
+}
+.first h5{
+    background-color: brown;
+margin-left: 30%;
+margin-right: 35%;
+height: 20px;
+padding: 10px;
+font-weight: 700;
+    color:black;
+    border-radius: 10px;
+    border: 2px solid blue;
+     
+}
+.first h6{
+   
+    background-color:cadetblue;
+    margin-left:30% ;
+    margin-right: 35%;
+    margin-top: 5px;
+    border-radius: 10px;
+    font-size: large;
+    font-style: italic;
+    padding: 10px;
+    border: 2px solid blue;
+    
+    
+}
+
+.first button{
+   margin-left: 32%;
+   margin-top: 5%;
+   background-color: chartreuse;
+   padding-left: 10%;
+   padding-right: 10%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 10px;
+}
+.first img{
+    height: 200px;
+    width: 200px;
+    margin-left: 40px;
+    margin-top: 20px;
+    padding: 5px;
+
+ border: 2px solid black;
+    border-radius: 20px;
+
+}
+
+.three{
+
+    display: flex;
+}
+
+.second{
+
+    height: 400px;
+    width: 350px;
+    background:linear-gradient(to right ,red,orange);
+    margin-top:30px;
+    margin-left: 60px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+     flex: 0 0 auto;
+     align-content: center;
+     border: 2px solid blue;
+      margin-top:50px;
+
+}
+
+.second img{
+height: 200px;
+    width: 200px;
+    margin-left: 70px;
+    margin-top: 35px;
+    border: 2px solid black;
+    border-radius: 20px;
+
+}
+
+.second h5{
+
+    background-color: brown;
+margin-left: 30%;
+margin-right: 35%;
+height: 20px;
+padding: 10px;
+font-weight: 700;
+    border-radius: 10px;
+    border: 2px solid blue;
+
+}
+
+.second h6{
+
+    background-color:cadetblue;
+    margin-left:30% ;
+    margin-right: 35%;
+    margin-top: 5px;
+    border-radius: 10px;
+    font-size: large;
+    font-style: italic;
+    padding: 10px;
+    border: 2px solid blue;
+
+}
+
+.second button{
+   margin-left: 32%;
+   margin-top: 5%;
+   background-color: chartreuse;
+   padding-left: 10%;
+   padding-right: 10%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 10px;
+}
+
+.third{
+
+    height: 400px;
+    width: 350px;
+   background:linear-gradient(to right ,red,orange);
+    margin-top:30px;
+    margin-left: 60px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+     flex: 0 0 auto;
+     align-content: center;
+     border :2px solid blue;
+      margin-top:50px;
+    
+
+}
+
+.third img{
+
+    height: 200px;
+    width: 250px;
+    margin-left: 30px;
+    margin-top: 20px;
+    padding: 10px;
+     border: 2px solid black;
+    border-radius: 20px;
+
+}
+
+.third h5{
+
+    background-color: brown;
+margin-left: 30%;
+margin-right: 35%;
+height: 20px;
+padding: 10px;
+font-weight: 700;
+    border-radius: 10px;
+    border: 2px solid blue;
+
+}
+
+.third h6{
+
+    background-color:cadetblue;
+    margin-left:30% ;
+    margin-right: 35%;
+    margin-top: 5px;
+    border-radius: 10px;
+    font-size: large;
+    font-style: italic;
+    padding: 10px;
+    border: 2px solid blue;
+}
+
+.third button{
+   margin-left: 32%;
+   margin-top: 5%;
+   background-color: chartreuse;
+   padding-left: 10%;
+   padding-right: 10%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 10px;
+}
+
+#menu{
+
+    background-color: blue;
+    padding: 2px;
+    margin: 5px;
+    color:chartreuse;
+    border-radius: 10px;
+
+}
+
+#menu:hover{
+    border: 5px solid red;
+    transition-duration: 0.1s ;
+}
+
+@media (max-width: 768px) {
+    /* On mobile, stack cards vertically */
+    .three {
+        flex-direction: column;
+        align-items: center; /* Centers the single column */
+        padding: 20px;
+        gap: 30px;
+    }
+
+    /* On mobile, cards take full width (minus padding) */
+    .first, .second, .third {
+        width: 100%;
+        max-width: 350px; /* Stops them getting too huge on tablets */
+        height: auto; /* Allows height to grow based on content */
+        min-height: 400px;
+    }
+}
