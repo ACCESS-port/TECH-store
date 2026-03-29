@@ -97,6 +97,24 @@
         margin-top: 20px;
     }
 
+    .two{
+       background: linear-gradient(135deg, #2563eb, #06b6d4); /* Blue/Cyan Gradient */
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 50px; /* Pill shape */
+        cursor: pointer;
+        box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+        transition: transform 0.2s, box-shadow 0.2s;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+
+    }
+
     button:hover {
         transform: scale(1.05); /* Grows slightly */
         box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);

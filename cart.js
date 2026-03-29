@@ -38,6 +38,14 @@ function showCart() {
 
             </div>
         `;
+
+          let total = 0;
+
+    for (let i = 0; i < cart.length; i++) {
+        total += Number(cart[i].price);
+    }
+        document.getElementById("amount").innerText= total
+
     }
 }
 
@@ -81,8 +89,7 @@ function checkout() {
         total += Number(cart[i].price);
     }
 
-    alert( "Order placed successfully ✅" +
-        "Total Amount: ₹" + total + " ✅");
+    alert( "Order placed successfully ✅");
 
    
 
