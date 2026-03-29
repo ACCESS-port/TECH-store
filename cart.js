@@ -1,8 +1,12 @@
-function addTocart(name, price) {
+function addTocart(name, price, image) {
 
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-    cart.push(name + " - ₹" + price);
+    cart.push({
+        name: name,
+        price: price,
+        image: image
+    });
 
     localStorage.setItem("cart", JSON.stringify(cart));
 
@@ -16,15 +20,23 @@ function showCart() {
 
     let box = document.getElementById("cart");
 
+    if (!box) return;
+
     box.innerHTML = "";
 
     for (let i = 0; i < cart.length; i++) {
 
         box.innerHTML += `
-            <p>
-                ${cart[i]}
+            <div style="border:1px solid white; margin:10px; padding:10px;">
+                
+                <img src="${cart[i].image}" width="100"><br>
+
+                <b>${cart[i].name}</b><br>
+                ₹${cart[i].price}<br>
+
                 <button onclick="deleteItem(${i})">Delete</button>
-            </p>
+
+            </div>
         `;
     }
 }

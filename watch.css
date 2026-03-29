@@ -225,6 +225,24 @@ font-weight: 700;
     border-radius: 10px;
 }
 
+
+a{
+     background-color: blue;
+    padding: 2px;
+    margin: 5px;
+    color:chartreuse;
+    border-radius: 5px;
+    margin-left: 85%;
+    
+}
+
+a:hover{
+
+    border: 2px solid green;
+     background-color: brown;
+    
+}
+
 #menu{
 
     background-color: blue;
@@ -238,6 +256,7 @@ font-weight: 700;
 #menu:hover{
     border: 5px solid red;
     transition-duration: 0.1s ;
+     background-color:brown;
 }
 
 @media (max-width: 768px) {
