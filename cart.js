@@ -41,6 +41,19 @@ function showCart() {
     }
 }
 
+function getTotal() {
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    let total = 0;
+
+    for (let i = 0; i < cart.length; i++) {
+        total += Number(cart[i].price);
+    }
+
+    return total;
+}
+
 
 function deleteItem(index) {
 
@@ -62,7 +75,16 @@ function checkout() {
         return;
     }
 
-    alert("Order placed successfully ✅");
+     let total = 0;
+
+    for (let i = 0; i < cart.length; i++) {
+        total += Number(cart[i].price);
+    }
+
+    alert( "Order placed successfully ✅" +
+        "Total Amount: ₹" + total + " ✅");
+
+   
 
     // clear cart after checkout
     localStorage.removeItem("cart");
